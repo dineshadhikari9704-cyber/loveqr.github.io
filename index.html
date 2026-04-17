@@ -1,147 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>💖 For You 💖</title>
+  <title>💖 For My Love 💖</title>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
     body {
       margin: 0;
-      overflow: hidden;
       font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top, #2a001f, #000000);
-      color: white;
-    }
-
-    .overlay {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle, rgba(255,77,109,0.2), transparent);
+      background: maroon;
+      color: black;
+      overflow-x: hidden;
     }
 
     .card {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(15px);
-      padding: 30px;
-      border-radius: 25px;
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255,255,255,0.9);
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
       text-align: center;
-      width: 360px;
-      box-shadow: 0 0 40px rgba(255,77,109,0.3);
     }
 
-    h2 {
-      font-size: 18px;
+    h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
     }
 
-    button {
-      padding: 10px 18px;
-      margin: 10px;
-      border-radius: 12px;
-      border: none;
-      cursor: pointer;
-      font-size: 15px;
-    }
-
-    #yesBtn {
-      background: white;
-      color: #ff4d6d;
+    .msg {
       font-weight: bold;
+      line-height: 1.8;
+      font-size: 16px;
     }
 
-    #noBtn {
-      background: transparent;
-      border: 2px solid white;
-      color: white;
-      position: absolute;
+    .photos {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+      flex-wrap: wrap;
     }
 
-    #message {
-      display: none;
-      margin-top: 15px;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    #photo {
-      display: none;
-      width: 160px;
-      height: 160px;
-      border-radius: 18px;
+    .photos img {
+      width: 220px;
+      height: 220px;
       object-fit: cover;
-      margin-top: 10px;
-      box-shadow: 0 0 25px rgba(255,77,109,0.6);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
     }
 
-    canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
+    .photos img:hover {
+      transform: scale(1.05);
+    }
+
+    .emoji {
+      font-size: 20px;
     }
   </style>
 </head>
 
 <body>
 
-<div class="overlay"></div>
-
 <div class="card">
-  <h2>💖 Do you love me? 💖</h2>
 
-  <button id="yesBtn" onclick="loveYes()">Yes 💖</button>
-  <button id="noBtn" onmouseover="runAway()">No 💔</button>
+  <h1>💖 Message for You 💖</h1>
 
-  <div id="message">
+  <div class="msg">
 
-    From the moment you came into my life, everything started to feel different… brighter ☀️, warmer 🔥, and more meaningful 💕. You are the reason I smile for no reason 😊 and the reason my heart feels so full every single day ❤️.<br><br>
+    I love you dhereiiiiiiiiiiiiiiiiiiiiiiiiii dhereii dhereiii 😭 🥹 sorry mayaluuuu hijo ko lagii sona 💔🥺<br><br>
 
-    I may not always find the perfect words, but my feelings for you are real, deep, and endless 🌊💞. You are my comfort 🤗, my happiness 😍, and my peace 🕊️. No matter where life takes us, one thing will never change—how much you mean to me 💗✨<br><br>
+    You are my everything 💕❣️ Narisaunaa merii mayaluuuu 😘❣️<br><br>
 
-    💖💖 <b>I LOVE YOU</b> 💖💖<br><br>
+    You make my every day better and better ❤️‍🔥<br>
+    Love you every minute, every hour, every second ⏳💞<br><br>
 
-    More than yesterday, less than tomorrow ♾️💕. You are my dream 🌙, my favorite thought 💭, and the best part of my life 💝. I’m so grateful to have you, and I’ll always be here for you—no matter what 💞🌹<br><br>
+    Maya You make my every day brighter just by being you ☀️💕<br>
+    Your smile melts my heart 😊❤️ and I want to be always with you 💗 🤗🫶<br><br>
 
-    Forever yours 💫❤️
+    Thank you for being my best friend, my biggest cheerleader, and the girl of my dreams 👑🌟<br>
+    My wife, my vida 💗 😘<br><br>
+
+    I love the way you laugh, the way you care, and how you make everything feel magical 💕💫<br><br>
+
+    No matter what, my heart is always yours ❤️‍🔥<br>
+    I promise to keep loving you more every single day ⏳💞<br><br>
+
+    I’m so lucky you’re mine 🥹💋<br>
+    I love you so much, forever and always 😘🌈<br><br>
+
+    Sorry meroo saniii 💖🥺😭
+
   </div>
 
-  <img id="photo" src="photo.jpg">
+  <div class="photos">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
+  </div>
+
 </div>
-
-<script>
-function loveYes() {
-  document.getElementById("message").style.display = "block";
-  document.getElementById("photo").style.display = "block";
-
-  for (let i = 0; i < 60; i++) {
-    let fw = document.createElement("div");
-    fw.innerHTML = "💖";
-    fw.style.position = "fixed";
-    fw.style.left = "50%";
-    fw.style.top = "50%";
-    fw.style.fontSize = "20px";
-
-    let angle = Math.random() * 2 * Math.PI;
-    let distance = Math.random() * 250;
-
-    fw.style.transform = `translate(${Math.cos(angle)*distance}px, ${Math.sin(angle)*distance}px)`;
-
-    document.body.appendChild(fw);
-
-    setTimeout(() => fw.remove(), 2000);
-  }
-}
-
-function runAway() {
-  let b = document.getElementById("noBtn");
-  b.style.left = Math.random()*250 + "px";
-  b.style.top = Math.random()*250 + "px";
-}
-</script>
 
 </body>
 </html>
